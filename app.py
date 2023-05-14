@@ -23,10 +23,13 @@ if uploaded_file is not None:
     mri_classifier_path = os.path.join(app_folder, "mri_classifier.h5")
     label = mri_classification(image, mri_classifier_path)
     
+    st.write("Result:")
+    
     if label == 0:
-       st.write("The MRI scan shows an healthy brain")
+        st.write('<p style="color:green;">The MRI scan shows a healthy brain</p>', unsafe_allow_html=True)
     else:
-       st.write("The MRI scan detects a brain tumor")
+        st.write('<p style="color:red;">The MRI scan detects a brain tumor</p>', unsafe_allow_html=True)
+
    
         
         
