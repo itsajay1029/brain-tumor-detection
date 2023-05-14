@@ -1,9 +1,6 @@
 streamlit
 Pillow
 numpy
-tensorflow
 keras
-opencv-python
+tensorflow
 opencv-python-headless
-scikit-learn
-matplotlib
